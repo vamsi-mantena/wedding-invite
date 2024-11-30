@@ -20,7 +20,10 @@ export default function Home() {
           height={105}
         />
         <div className={styles.mobileLineOne}>
-          <a className={`${styles.button} ${styles.mobileButtonOne}`}>
+          <a
+            className={`${styles.button} ${styles.mobileButtonOne}`}
+            href="/invitation"
+          >
             Invitation
           </a>
           <Image src={imageSecondOne} alt="image" width={125} height={187} />
@@ -61,7 +64,9 @@ export default function Home() {
         </div>
 
         <div className={styles.buttonWrapper}>
-          <a className={styles.button}>Invitation</a>
+          <a className={styles.button} href="/invitation">
+            Invitation
+          </a>
           <a className={styles.button}>Maps</a>
           <a className={styles.button}>Live Link</a>
           <a className={styles.button}>Contact</a>
