@@ -1,95 +1,72 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import imageTop from "../../public/images/mainPage/imageTop.avif";
+import imageSecondOne from "../../public/images/mainPage/imageSecondOne.avif";
+import imageSecondTwo from "../../public/images/mainPage/imageSecondTwo.avif";
+import imageThirdOne from "../../public/images/mainPage/imageThirdOne.avif";
+import imageThirdTwo from "../../public/images/mainPage/imageThirdTwo.avif";
+import finalLine from "../../public/images/mainPage/finalLine.avif";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
+      <main className={`${styles.main} ${styles.mobile}`}>
+        <div className={styles.title}>Groom & Bride</div>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src={imageTop}
+          className={styles.mobileHeader}
+          alt="image"
+          width={150}
+          height={105}
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <div className={styles.mobileLineOne}>
+          <a className={`${styles.button} ${styles.mobileButtonOne}`}>
+            Invitation
+          </a>
+          <Image src={imageSecondOne} alt="image" width={125} height={187} />
+        </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        <div className={styles.mobileLineTwo}>
+          <Image src={imageSecondTwo} alt="image" width={166} height={125} />
+          <a className={styles.button}>Maps</a>
+        </div>
+        <div className={styles.mobileLineThree}>
+          <a className={styles.button}>Live Link</a>
+          <Image src={imageThirdOne} alt="image" width={129} height={173} />
+        </div>
+        <div className={styles.mobileLineFour}>
+          <Image src={imageThirdTwo} alt="image" width={197} height={151} />
+          <a className={styles.button}>Contact</a>
+        </div>
+        <div className={styles.mobileLineFive}></div>
+      </main>
+      <main className={`${styles.main} ${styles.desktop}`}>
+        <div className={styles.title}>Groom & Bride</div>
+
+        <div className={styles.imageWrapper}>
+          <div className={`${styles.imageLine} ${styles.lineOne}`}>
+            <Image src={imageTop} alt="image" width={150} height={105} />
+          </div>
+          <div className={`${styles.imageLine} ${styles.lineTwo}`}>
+            <Image src={imageSecondOne} alt="image" width={125} height={187} />
+            <Image src={imageSecondTwo} alt="image" width={166} height={125} />
+          </div>
+          <div className={`${styles.imageLine} ${styles.lineThree}`}>
+            <Image src={imageThirdOne} alt="image" width={129} height={173} />
+            <Image src={imageThirdTwo} alt="image" width={197} height={151} />
+          </div>
+          <div className={`${styles.imageLine} ${styles.lineFour}`}>
+            <Image src={finalLine} alt="image" width={361} height={269} />
+          </div>
+        </div>
+
+        <div className={styles.buttonWrapper}>
+          <a className={styles.button}>Invitation</a>
+          <a className={styles.button}>Maps</a>
+          <a className={styles.button}>Live Link</a>
+          <a className={styles.button}>Contact</a>
         </div>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
