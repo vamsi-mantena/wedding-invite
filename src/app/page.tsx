@@ -22,7 +22,7 @@ export default function Home() {
         <div className={styles.mobileLineOne}>
           <a
             className={`${styles.button} ${styles.mobileButtonOne}`}
-            href="/invitation"
+            href="/wedding-invitation/invitation"
           >
             Invitation
           </a>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         <div className={styles.buttonWrapper}>
-          <a className={styles.button} href="/invitation">
+          <a className={styles.button} href="/wedding-invitation/invitation">
             Invitation
           </a>
           <a className={styles.button}>Maps</a>
