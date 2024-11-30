@@ -4,6 +4,7 @@
   width: 100vw;
   height: auto;
   font-family: var(--font-geist-sans);
+  padding-bottom: 150px;
 }
 
 .main {
