@@ -45,7 +45,7 @@ const Invitation = () => {
         <div className={styles.venueWrapper}>
           <div className={styles.name}>Venue</div>
           <div className={styles.context}>Nirmala Devi Function hall</div>
-          <div className={styles.context}>Pedamiram, West Godavari,AP</div>
+          <div className={styles.context}>Pedamiram, West Godavari</div>
           <div className={styles.context}>Andhara Pradesh</div>
         </div>
         <div className={styles.dinnerWrapper}>
