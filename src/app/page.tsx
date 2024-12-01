@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={`${styles.main} ${styles.mobile}`}>
-        <div className={styles.title}>Groom & Bride</div>
+        <div className={styles.title}>Jagadish & Naveena</div>
         <Image
           src={imageTop}
           className={styles.mobileHeader}
@@ -31,7 +31,12 @@ export default function Home() {
 
         <div className={styles.mobileLineTwo}>
           <Image src={imageSecondTwo} alt="image" width={166} height={125} />
-          <a className={styles.button}>Maps</a>
+          <a
+            className={styles.button}
+            href="https://maps.app.goo.gl/onSe6chhHAxwneUx5"
+          >
+            Maps
+          </a>
         </div>
         <div className={styles.mobileLineThree}>
           <a className={styles.button}>Live Link</a>
@@ -39,12 +44,14 @@ export default function Home() {
         </div>
         <div className={styles.mobileLineFour}>
           <Image src={imageThirdTwo} alt="image" width={197} height={151} />
-          <a className={styles.button}>Contact</a>
+          <a className={styles.button} href="/wedding-invitation/contact">
+            Contact
+          </a>
         </div>
         <div className={styles.mobileLineFive}></div>
       </main>
       <main className={`${styles.main} ${styles.desktop}`}>
-        <div className={styles.title}>Groom & Bride</div>
+        <div className={styles.title}>Jagadish & Naveena</div>
 
         <div className={styles.imageWrapper}>
           <div className={`${styles.imageLine} ${styles.lineOne}`}>
@@ -67,9 +74,16 @@ export default function Home() {
           <a className={styles.button} href="/wedding-invitation/invitation">
             Invitation
           </a>
-          <a className={styles.button}>Maps</a>
+          <a
+            className={styles.button}
+            href="https://maps.app.goo.gl/onSe6chhHAxwneUx5"
+          >
+            Maps
+          </a>
           <a className={styles.button}>Live Link</a>
-          <a className={styles.button}>Contact</a>
+          <a className={styles.button} href="/wedding-invitation/contact">
+            Contact
+          </a>
         </div>
       </main>
     </div>
