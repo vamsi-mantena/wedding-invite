@@ -31,7 +31,7 @@ const Invitation = () => {
         {/* <div className={styles.and}>&</div> */}
         <div className={styles.brideDetailsWrapper}>
           <div className={styles.name}>Ramani Naveena</div>
-          <div className={styles.context}>D/o Penmatsa Venkata Raju</div>
+          <div className={styles.context}>D/o Penmetsa Venkata Raju</div>
           <div className={styles.context}>&</div>
           <div className={styles.context}>Smt Rajani</div>
         </div>
