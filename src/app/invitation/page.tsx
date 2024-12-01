@@ -31,7 +31,7 @@ const Invitation = () => {
         {/* <div className={styles.and}>&</div> */}
         <div className={styles.brideDetailsWrapper}>
           <div className={styles.name}>Ramani Naveena</div>
-          <div className={styles.context}>S/o Penmatsa Venkata Raju</div>
+          <div className={styles.context}>D/o Penmatsa Venkata Raju</div>
           <div className={styles.context}>&</div>
           <div className={styles.context}>Smt Rajani</div>
         </div>
@@ -46,10 +46,11 @@ const Invitation = () => {
           <div className={styles.name}>Venue</div>
           <div className={styles.context}>Nirmala Devi Function hall</div>
           <div className={styles.context}>Pedamiram, West Godavari,AP</div>
+          <div className={styles.context}>Andhara Pradesh</div>
         </div>
         <div className={styles.dinnerWrapper}>
           <div className={styles.name}>Dinner</div>
-          <div className={styles.context}>On Thursday ,02 February ,2025</div>
+          <div className={styles.context}>On Thursday, 20 February, 2025</div>
           <div className={styles.context}>From 6:30 pm at venue</div>
         </div>
       </div>
