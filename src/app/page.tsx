@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import imageTop from "../../public/images/mainPage/imageTop.avif";
@@ -82,7 +83,10 @@ export default function Home() {
           </a>
           <a
             className={styles.button}
-            href="https://youtube.com/live/wysJBY851qc?feature=share"
+            onClick={() => {
+              window.open("https://youtube.com/live/wysJBY851qc?feature=share");
+            }}
+            // href="https://youtube.com/live/wysJBY851qc?feature=share"
           >
             Live Link
           </a>
