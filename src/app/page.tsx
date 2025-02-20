@@ -83,10 +83,9 @@ export default function Home() {
           </a>
           <a
             className={styles.button}
-            onClick={() => {
-              window.open("https://youtube.com/live/wysJBY851qc?feature=share");
-            }}
-            // href="https://youtube.com/live/wysJBY851qc?feature=share"
+            href="https://youtube.com/live/wysJBY851qc?feature=share"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Live Link
           </a>
