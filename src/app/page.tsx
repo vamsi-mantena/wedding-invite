@@ -80,7 +80,12 @@ export default function Home() {
           >
             Maps
           </a>
-          <a className={styles.button}>Live Link</a>
+          <a
+            className={styles.button}
+            href="https://youtube.com/live/wysJBY851qc?feature=share"
+          >
+            Live Link
+          </a>
           <a className={styles.button} href="/wedding-invite/contact">
             Contact
           </a>
